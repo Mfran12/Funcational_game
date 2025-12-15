@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Game</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="" id="refresh-btn">Refresh Page</a>
+        <h5 id="timer">Time: 30</h5>
+        <h5>High Score: <span id="high-score">0</span></h5>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-3">Drag the Meme to Earn Points</h1>
+        <p class="text-center lead">Move the Meme and see what happens.</p>
+
+        <div class="row mt-4">
+
+            <!-- GAME AREA -->
+            <div class="col-md-8 mb-4">
+                <div id="containment-wrapper">
+                    <img id="starting" class="doge-img" src="imgs/starting.png" alt="Starting Doge">
+                    <img id="middle" class="doge-img hidden" src="imgs/saltbae.png" alt="Mid Doge">
+                    <img id="far" class="doge-img hidden" src="imgs/shaq.png" alt="Far Doge">
+                    <img id="congrats" class="doge-img hidden" src="imgs/congrats.png" alt="Winner Doge">
+                    <img id="victory-gif" class="hidden" src="imgs/celebration.gif" alt="Victory Celebration">
+                </div>
+            </div>
+
+            <!-- SCORE PANEL -->
+            <div class="col-md-4">
+                <div class="score-box">
+                    <h3 class="text-center">Score</h3>
+                    <h1 id="score-display" class="text-center text-primary">0</h1>
+
+                    <h5>Progress</h5>
+                    <div class="progress mb-3">
+                        <div id="score-progress" class="progress-bar" style="width:0%"></div>
+                    </div>
+
+                    <div id="status-message" class="alert alert-info">
+                        Drag the meme to Begin!
+                    </div>
+
+                    <img id="celebration" class="hidden" src="imgs/celebration.gif" alt="Celebration">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS LIBRARIES -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- GAME SCRIPTS -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/victory.js"></script>
+    <script src="scripts/Extra.js"></script>
+
+</body>
+</html>

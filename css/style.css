@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(to bottom right, #717379, #607abb);
+}
+
+#containment-wrapper {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    border: 2px dashed #999;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.doge-img {
+    position: absolute;
+    width: 100px;
+    cursor: grab;
+    user-select: none;
+}
+
+.doge-img:active {
+    cursor: grabbing;
+}
+
+.hidden {
+    display: none;
+}
+
+.score-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: #aa5e5e !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
